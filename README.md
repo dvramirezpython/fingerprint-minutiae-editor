@@ -1,20 +1,30 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Minutia editor for fingerprints, palmprints, or fingerphotos.
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1yUqTz9ZhK9hIvlkTwXMB6ebWcCL3pkPU
+_Thanks to Google AI studio_
 
 ## Run Locally
 
 **Prerequisites:**  Node.js
-
-
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Run the app:
    `npm run dev`
+
+**Steps:**
+> Load the image
+>
+> Load the txt file with minutiae previously extracted (optional)
+>
+> Add minutiae use shortcuts: *B* for bifurcation, *E* for endings, *D* for editing
+>
+> Modify the type, coordinates, and direction as needed
+>
+>> The direction can be set by selecting the minutia and clicking in the direction.
+>>
+>> A minutia can be moved in the picture adjusting its coordinates
+>>
+>> A minutia type can be modified using the buttons in the left panel
+>>
+>> A minutia can be removed with the DElete minutia button
+>
+> Save the minutiae list as a txt with a line per minutia with relative coordinates (x, y), direction in radians (clockwise angle from 0.0 to 6.28), and minutia type (0 -> endings and 1 -> bifurcations)
