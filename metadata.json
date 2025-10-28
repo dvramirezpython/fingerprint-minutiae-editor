@@ -1,0 +1,5 @@
+{
+  "name": "Fingerprint Minutiae Editor",
+  "description": "An interactive web application to load a fingerprint image, visualize, edit, and save its minutiae points (endings and bifurcations). Features include zooming, orientation adjustment, and creating or deleting minutiae.",
+  "requestFramePermissions": []
+}
